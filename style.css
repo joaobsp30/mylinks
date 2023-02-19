@@ -5,12 +5,19 @@
 }
 body{
     background-color: black;
-    font-family: sans-serif;
+    font-family: monospace;
 }
 img {
-    border-radius: 20px;
+
+    border-radius: 50%;
     width: 320px;
     height: 320px;
+    border: 1px solid white;
+    position:relative
+}
+
+img:hover{ 
+    top:-5px;box-shadow:0 5px 5px #666;
 }
 
 h1 {
@@ -34,13 +41,19 @@ li{
 }
 
 a{
-    background-color: limegreen;
-    color: white;
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
     padding: 15px;
     text-decoration: none;
     display: block;
     border-radius: 5px;
+}
 
+a:hover{
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
 
 footer{
